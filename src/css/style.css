@@ -34,6 +34,11 @@ body {
     height: 100%;
 }
 
+body {
+    display: grid;
+    grid-template-rows: auto 100px;
+}
+
 main {
     display: flex;
     flex-direction: row;
@@ -71,6 +76,10 @@ main {
 }
 
 @media all and (max-width: 480px) {
+    body {
+        grid-template-rows: auto 180px;
+    }
+
     main {
         padding-top: 1em;   
     }
@@ -99,11 +108,6 @@ footer {
     font-weight: bold;
     padding: 0;
     background-color: #fff;
-    margin-top: -50px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
     opacity: .6;
     font-size: 14px;
 }
@@ -158,5 +162,5 @@ footer .socials span {
 
 footer .date {
     text-align: center;
-    margin: 10px 0;
+    margin: 10px 0 0;
 }
