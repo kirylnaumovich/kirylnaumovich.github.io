@@ -67,11 +67,12 @@ main {
 
 @media all and (max-width: 768px) {
     .info {
-        font-size: 40px;
+        font-size: 28px;
+        border-radius: 20px 20px 0 0;
     }
 
     .info span {
-        font-size: 48px;
+        font-size: 32px;
     }
 }
 
