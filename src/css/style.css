@@ -1,0 +1,162 @@
+*,
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #333;
+}
+
+.background-image {
+    min-height: 100%;
+    min-width: 1200px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    opacity: .7;
+}
+
+@media screen and (max-width: 1200px) {
+    .background-image {
+        left: 50%;
+        margin-left: -600px;
+    }
+}
+
+html,
+body {
+    height: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    padding-top: 5em;
+}
+
+.info {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    color: #c11818;
+    font-size: 60px;
+    opacity: .8;
+    max-height: 520px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.info span {
+    font-family: 'Baloo Chettan';
+    font-size: 72px;
+}
+
+@media all and (max-width: 768px) {
+    .info {
+        font-size: 40px;
+    }
+
+    .info span {
+        font-size: 48px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    main {
+        padding-top: 1em;   
+    }
+
+    .info {
+        max-height: inherit;
+    }
+}
+
+.examples {
+    margin-top: 40px;
+}
+
+.examples img {
+    width: 200px;
+    height: 200px;
+}
+
+.info .phone {
+    font-weight: bold;
+}
+
+footer {
+    color: #c11818;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0;
+    background-color: #fff;
+    margin-top: -50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .6;
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    margin-left: 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    margin: 0;
+}
+
+footer .full-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media all and (max-width: 480px) {
+    footer .full-contacts {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer ul {
+        padding: 0;
+    }
+
+    footer .socials ul {
+        padding: 0;
+    }
+}
+
+footer .law-info,
+footer .socials {
+    padding: 10px 10px;
+}
+
+footer .socials ul {
+    list-style: none;
+}
+
+footer .socials span {
+    margin-left: 8px;
+}
+
+footer .date {
+    text-align: center;
+    margin: 10px 0;
+}
